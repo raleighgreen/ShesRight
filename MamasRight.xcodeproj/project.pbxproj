@@ -81,7 +81,7 @@
 		4572CEE21F1D4058003A6632 = {
 			isa = PBXGroup;
 			children = (
-				4572CEED1F1D4058003A6632 /* ShesRight */,
+				4572CEED1F1D4058003A6632 /* MamasRight */,
 				4572CF051F1D4058003A6632 /* ShesRightTests */,
 				4572CF101F1D4058003A6632 /* ShesRightUITests */,
 				4572CEEC1F1D4058003A6632 /* Products */,
@@ -98,7 +98,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4572CEED1F1D4058003A6632 /* ShesRight */ = {
+		4572CEED1F1D4058003A6632 /* MamasRight */ = {
 			isa = PBXGroup;
 			children = (
 				4572CF1F1F1D52AE003A6632 /* AudioFIles */,
@@ -110,6 +110,7 @@
 				4572CEFD1F1D4058003A6632 /* Info.plist */,
 				4572CEF51F1D4058003A6632 /* ShesRight.xcdatamodeld */,
 			);
+			name = MamasRight;
 			path = ShesRight;
 			sourceTree = "<group>";
 		};
