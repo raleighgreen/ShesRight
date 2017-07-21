@@ -18,14 +18,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "MamasRight", ofType: "m4a")!))
-            audioPlayer.prepareToPlay()
-            audioPlayer.play()
+            playSound()
         }
         catch {
             print(error)
         }
-        
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.playSound), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +36,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func Play(_ sender: Any) {
+        playSound()
+    }
+    func playSound(){
+        audioPlayer.prepareToPlay()
         audioPlayer.play()
     }
 }
