@@ -13,27 +13,8 @@
 		4572CEF71F1D4058003A6632 /* ShesRight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4572CEF51F1D4058003A6632 /* ShesRight.xcdatamodeld */; };
 		4572CEF91F1D4058003A6632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4572CEF81F1D4058003A6632 /* Assets.xcassets */; };
 		4572CEFC1F1D4058003A6632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4572CEFA1F1D4058003A6632 /* LaunchScreen.storyboard */; };
-		4572CF071F1D4058003A6632 /* ShesRightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572CF061F1D4058003A6632 /* ShesRightTests.swift */; };
-		4572CF121F1D4058003A6632 /* ShesRightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572CF111F1D4058003A6632 /* ShesRightUITests.swift */; };
 		4572CF211F1D58EA003A6632 /* MamasRight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4572CF201F1D52E1003A6632 /* MamasRight.m4a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4572CF031F1D4058003A6632 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4572CEE31F1D4058003A6632 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4572CEEA1F1D4058003A6632;
-			remoteInfo = ShesRight;
-		};
-		4572CF0E1F1D4058003A6632 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4572CEE31F1D4058003A6632 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4572CEEA1F1D4058003A6632;
-			remoteInfo = ShesRight;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4572CEEB1F1D4058003A6632 /* MamasRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamasRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +25,8 @@
 		4572CEF81F1D4058003A6632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4572CEFB1F1D4058003A6632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4572CEFD1F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4572CF021F1D4058003A6632 /* MamasRightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MamasRightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4572CF061F1D4058003A6632 /* ShesRightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShesRightTests.swift; sourceTree = "<group>"; };
 		4572CF081F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4572CF0D1F1D4058003A6632 /* MamasRightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MamasRightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4572CF111F1D4058003A6632 /* ShesRightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShesRightUITests.swift; sourceTree = "<group>"; };
 		4572CF131F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4572CF201F1D52E1003A6632 /* MamasRight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = MamasRight.m4a; sourceTree = "<group>"; };
@@ -55,20 +34,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4572CEE81F1D4058003A6632 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4572CEFF1F1D4058003A6632 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4572CF0A1F1D4058003A6632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				4572CEEB1F1D4058003A6632 /* MamasRight.app */,
-				4572CF021F1D4058003A6632 /* MamasRightTests.xctest */,
-				4572CF0D1F1D4058003A6632 /* MamasRightUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,42 +123,6 @@
 			productReference = 4572CEEB1F1D4058003A6632 /* MamasRight.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4572CF011F1D4058003A6632 /* MamasRightTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4572CF191F1D4058003A6632 /* Build configuration list for PBXNativeTarget "MamasRightTests" */;
-			buildPhases = (
-				4572CEFE1F1D4058003A6632 /* Sources */,
-				4572CEFF1F1D4058003A6632 /* Frameworks */,
-				4572CF001F1D4058003A6632 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4572CF041F1D4058003A6632 /* PBXTargetDependency */,
-			);
-			name = MamasRightTests;
-			productName = ShesRightTests;
-			productReference = 4572CF021F1D4058003A6632 /* MamasRightTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4572CF0C1F1D4058003A6632 /* MamasRightUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4572CF1C1F1D4058003A6632 /* Build configuration list for PBXNativeTarget "MamasRightUITests" */;
-			buildPhases = (
-				4572CF091F1D4058003A6632 /* Sources */,
-				4572CF0A1F1D4058003A6632 /* Frameworks */,
-				4572CF0B1F1D4058003A6632 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4572CF0F1F1D4058003A6632 /* PBXTargetDependency */,
-			);
-			name = MamasRightUITests;
-			productName = ShesRightUITests;
-			productReference = 4572CF0D1F1D4058003A6632 /* MamasRightUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,18 +137,6 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = EKBR8K779P;
 						ProvisioningStyle = Automatic;
-					};
-					4572CF011F1D4058003A6632 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = EKBR8K779P;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4572CEEA1F1D4058003A6632;
-					};
-					4572CF0C1F1D4058003A6632 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = EKBR8K779P;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4572CEEA1F1D4058003A6632;
 					};
 				};
 			};
@@ -239,8 +154,6 @@
 			projectRoot = "";
 			targets = (
 				4572CEEA1F1D4058003A6632 /* MamasRight */,
-				4572CF011F1D4058003A6632 /* MamasRightTests */,
-				4572CF0C1F1D4058003A6632 /* MamasRightUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,20 +170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4572CF001F1D4058003A6632 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4572CF0B1F1D4058003A6632 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -284,36 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4572CEFE1F1D4058003A6632 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4572CF071F1D4058003A6632 /* ShesRightTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4572CF091F1D4058003A6632 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4572CF121F1D4058003A6632 /* ShesRightUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4572CF041F1D4058003A6632 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4572CEEA1F1D4058003A6632 /* MamasRight */;
-			targetProxy = 4572CF031F1D4058003A6632 /* PBXContainerItemProxy */;
-		};
-		4572CF0F1F1D4058003A6632 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4572CEEA1F1D4058003A6632 /* MamasRight */;
-			targetProxy = 4572CF0E1F1D4058003A6632 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4572CEF21F1D4058003A6632 /* Main.storyboard */ = {
@@ -456,64 +326,6 @@
 			};
 			name = Release;
 		};
-		4572CF1A1F1D4058003A6632 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = EKBR8K779P;
-				INFOPLIST_FILE = ShesRightTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raleighgreen.ShesRightTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MamasRight.app/MamasRight";
-			};
-			name = Debug;
-		};
-		4572CF1B1F1D4058003A6632 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = EKBR8K779P;
-				INFOPLIST_FILE = ShesRightTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raleighgreen.ShesRightTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MamasRight.app/MamasRight";
-			};
-			name = Release;
-		};
-		4572CF1D1F1D4058003A6632 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = EKBR8K779P;
-				INFOPLIST_FILE = ShesRightUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raleighgreen.ShesRightUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = ShesRight;
-			};
-			name = Debug;
-		};
-		4572CF1E1F1D4058003A6632 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = EKBR8K779P;
-				INFOPLIST_FILE = ShesRightUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raleighgreen.ShesRightUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = ShesRight;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,24 +343,6 @@
 			buildConfigurations = (
 				4572CF171F1D4058003A6632 /* Debug */,
 				4572CF181F1D4058003A6632 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4572CF191F1D4058003A6632 /* Build configuration list for PBXNativeTarget "MamasRightTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4572CF1A1F1D4058003A6632 /* Debug */,
-				4572CF1B1F1D4058003A6632 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4572CF1C1F1D4058003A6632 /* Build configuration list for PBXNativeTarget "MamasRightUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4572CF1D1F1D4058003A6632 /* Debug */,
-				4572CF1E1F1D4058003A6632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

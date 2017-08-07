@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         catch {
             print(error)
         }
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.playSound), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
