@@ -25,10 +25,6 @@
 		4572CEF81F1D4058003A6632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4572CEFB1F1D4058003A6632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4572CEFD1F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4572CF061F1D4058003A6632 /* ShesRightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShesRightTests.swift; sourceTree = "<group>"; };
-		4572CF081F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4572CF111F1D4058003A6632 /* ShesRightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShesRightUITests.swift; sourceTree = "<group>"; };
-		4572CF131F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4572CF201F1D52E1003A6632 /* MamasRight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = MamasRight.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,8 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				4572CEED1F1D4058003A6632 /* MamasRight */,
-				4572CF051F1D4058003A6632 /* ShesRightTests */,
-				4572CF101F1D4058003A6632 /* ShesRightUITests */,
 				4572CEEC1F1D4058003A6632 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,24 +69,6 @@
 			);
 			name = MamasRight;
 			path = ShesRight;
-			sourceTree = "<group>";
-		};
-		4572CF051F1D4058003A6632 /* ShesRightTests */ = {
-			isa = PBXGroup;
-			children = (
-				4572CF061F1D4058003A6632 /* ShesRightTests.swift */,
-				4572CF081F1D4058003A6632 /* Info.plist */,
-			);
-			path = ShesRightTests;
-			sourceTree = "<group>";
-		};
-		4572CF101F1D4058003A6632 /* ShesRightUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4572CF111F1D4058003A6632 /* ShesRightUITests.swift */,
-				4572CF131F1D4058003A6632 /* Info.plist */,
-			);
-			path = ShesRightUITests;
 			sourceTree = "<group>";
 		};
 		4572CF1F1F1D52AE003A6632 /* AudioFIles */ = {
