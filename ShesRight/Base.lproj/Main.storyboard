@@ -41,6 +41,40 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyI-Zg-in4">
+                                <rect key="frame" x="25" y="117" width="324" height="433"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-34-uqp">
+                                        <rect key="frame" x="24" y="59" width="277" height="315"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">Mama's Right is designed to give you verbal backup whenever you need it most (or whenever you need it least!).
+
+Instructions:
+
+1) Launch App
+2) Tap screen
+3) Point your screen at intended recipient so 
+that they both see and hear "Mama's Right!"
+
+Credits:
+
+Mama's Right! was designed and developed by 
+Raleigh Green © 2017
+www.raleighgreen.com
+
+App concept by Laura Brereton
+
+Original illustration created in 1943 by
+Howard Miller
+</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -49,11 +83,15 @@
                             <constraint firstItem="d6e-gk-FYs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6rj-Qm-Qpq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5kB-PM-Yk8" secondAttribute="bottom" constant="35" id="Jqa-Qd-g45"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d6e-gk-FYs" secondAttribute="bottom" constant="20" id="S0e-83-nyb"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="centerX" secondItem="5kB-PM-Yk8" secondAttribute="centerX" id="bb9-H1-agL"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="fhz-TO-ZS1"/>
                             <constraint firstItem="vb9-N7-BCh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hFR-Am-mqL"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="centerY" secondItem="d6e-gk-FYs" secondAttribute="centerY" id="ltj-O1-KPM"/>
                             <constraint firstItem="vb9-N7-BCh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="miY-Dt-Yab"/>
                             <constraint firstAttribute="trailing" secondItem="vb9-N7-BCh" secondAttribute="trailing" id="qmv-c3-2Cu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vb9-N7-BCh" secondAttribute="bottom" id="rpV-7d-dYD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d6e-gk-FYs" secondAttribute="trailing" id="ydU-Ey-M9w"/>
+                            <constraint firstItem="5kB-PM-Yk8" firstAttribute="top" secondItem="CyI-Zg-in4" secondAttribute="bottom" constant="61" id="yq5-tm-L3d"/>
                         </constraints>
                     </view>
                     <connections>
