@@ -43,6 +43,9 @@ class ViewController: UIViewController {
             self.labelHider.alpha = 0
         }
     }
+    
+    @IBAction func showModal(_ sender: Any) {
+    }
     func playSound(){
         audioPlayer.prepareToPlay()
         audioPlayer.play()
