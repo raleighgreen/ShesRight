@@ -13,11 +13,14 @@ class ViewController: UIViewController {
 
     var audioPlayer = AVAudioPlayer()
     
+    @IBOutlet var labelHider: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "MamasRight", ofType: "m4a")!))
+            // when view loads, play sound right away!
             playSound()
         }
         catch {
@@ -26,13 +29,19 @@ class ViewController: UIViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
+    // make status bar light style
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     @IBAction func Play(_ sender: Any) {
+        // when the screen (button) is clicked, play the sound
         playSound()
+        // and animate the lable fadeout
+        UIView.animate(withDuration: 0.3) {
+            self.labelHider.alpha = 0
+        }
     }
     func playSound(){
         audioPlayer.prepareToPlay()
