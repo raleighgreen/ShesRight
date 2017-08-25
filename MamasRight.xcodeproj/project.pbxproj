@@ -14,6 +14,8 @@
 		4572CEF91F1D4058003A6632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4572CEF81F1D4058003A6632 /* Assets.xcassets */; };
 		4572CEFC1F1D4058003A6632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4572CEFA1F1D4058003A6632 /* LaunchScreen.storyboard */; };
 		4572CF211F1D58EA003A6632 /* MamasRight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4572CF201F1D52E1003A6632 /* MamasRight.m4a */; };
+		45D245711F4F334100AEBE88 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D245701F4F334100AEBE88 /* DesignableView.swift */; };
+		45D245731F4F36D500AEBE88 /* infoPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D245721F4F36D500AEBE88 /* infoPopupVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4572CEFB1F1D4058003A6632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4572CEFD1F1D4058003A6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4572CF201F1D52E1003A6632 /* MamasRight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = MamasRight.m4a; sourceTree = "<group>"; };
+		45D245701F4F334100AEBE88 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		45D245721F4F36D500AEBE88 /* infoPopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoPopupVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				4572CEFA1F1D4058003A6632 /* LaunchScreen.storyboard */,
 				4572CEFD1F1D4058003A6632 /* Info.plist */,
 				4572CEF51F1D4058003A6632 /* ShesRight.xcdatamodeld */,
+				45D245701F4F334100AEBE88 /* DesignableView.swift */,
+				45D245721F4F36D500AEBE88 /* infoPopupVC.swift */,
 			);
 			name = MamasRight;
 			path = ShesRight;
@@ -153,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D245711F4F334100AEBE88 /* DesignableView.swift in Sources */,
+				45D245731F4F36D500AEBE88 /* infoPopupVC.swift in Sources */,
 				4572CEF11F1D4058003A6632 /* ViewController.swift in Sources */,
 				4572CEF71F1D4058003A6632 /* ShesRight.xcdatamodeld in Sources */,
 				4572CEEF1F1D4058003A6632 /* AppDelegate.swift in Sources */,

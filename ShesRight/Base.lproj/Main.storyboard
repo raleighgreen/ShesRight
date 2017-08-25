@@ -43,7 +43,7 @@
                                 </state>
                                 <connections>
                                     <action selector="showModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ui4-NS-aLO"/>
-                                    <segue destination="CP0-fc-DTV" kind="presentation" id="3RG-pP-ZAP"/>
+                                    <segue destination="CP0-fc-DTV" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="3RG-pP-ZAP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(tap screen for sound)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kB-PM-Yk8">
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Info PopupVC-->
         <scene sceneID="TTD-9y-dDk">
             <objects>
-                <viewController id="CP0-fc-DTV" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="CP0-fc-DTV" customClass="infoPopupVC" customModule="MamasRight" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tXw-0s-fwi"/>
                         <viewControllerLayoutGuide type="bottom" id="Xo4-5J-0nb"/>
@@ -89,70 +89,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyI-Zg-in4">
-                                <rect key="frame" x="25" y="164" width="324" height="339"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSN-Ho-zrY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.73218639184397161" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dismissPopup:" destination="CP0-fc-DTV" eventType="touchUpInside" id="kML-jr-ofH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyI-Zg-in4" userLabel="Popup" customClass="DesignableView" customModule="MamasRight" customModuleProvider="target">
+                                <rect key="frame" x="32" y="133" width="311" height="401"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykZ-NJ-RQy">
-                                        <rect key="frame" x="284" y="10" width="30" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="✕">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-34-uqp">
-                                        <rect key="frame" x="23" y="54" width="279" height="231"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <string key="text">Mama's Right! gives you comical verbal backup whenever you need it most (or least!). :)
-
-Instructions:
-
-1) Launch App
-2) Tap screen
-3) Point your screen at intended recipient so 
-that they see and hear "Mama's Right!"
-
-Credits:
-
-Mama's Right! is designed and developed by 
-Raleigh Green © 2017
-www.raleighgreen.com
-
-App concept by Laura Brereton
-
-Original illustration created in 1943 by
-Howard Miller
-</string>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MamasRightText" translatesAutoresizingMaskIntoConstraints="NO" id="I7h-AC-0LT">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="401"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ykZ-NJ-RQy" secondAttribute="trailing" constant="10" id="012-Zn-PHr"/>
-                                    <constraint firstItem="mbj-34-uqp" firstAttribute="centerY" secondItem="CyI-Zg-in4" secondAttribute="centerY" id="DW6-ft-LXR"/>
-                                    <constraint firstItem="mbj-34-uqp" firstAttribute="leading" secondItem="CyI-Zg-in4" secondAttribute="leading" constant="23" id="TRr-ps-n63"/>
-                                    <constraint firstItem="mbj-34-uqp" firstAttribute="top" secondItem="CyI-Zg-in4" secondAttribute="top" constant="54" id="Uud-PE-Oao"/>
-                                    <constraint firstItem="mbj-34-uqp" firstAttribute="centerX" secondItem="CyI-Zg-in4" secondAttribute="centerX" id="tq0-bZ-ny9"/>
-                                    <constraint firstItem="ykZ-NJ-RQy" firstAttribute="top" secondItem="CyI-Zg-in4" secondAttribute="top" constant="10" id="zdt-7f-QMR"/>
+                                    <constraint firstItem="I7h-AC-0LT" firstAttribute="leading" secondItem="CyI-Zg-in4" secondAttribute="leading" id="DA7-eB-Csi"/>
+                                    <constraint firstItem="I7h-AC-0LT" firstAttribute="top" secondItem="CyI-Zg-in4" secondAttribute="top" id="I3X-ht-Uhe"/>
+                                    <constraint firstAttribute="trailing" secondItem="I7h-AC-0LT" secondAttribute="trailing" id="KUE-WZ-E6m"/>
+                                    <constraint firstAttribute="bottom" secondItem="I7h-AC-0LT" secondAttribute="bottom" id="eZi-c1-M8k"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CyI-Zg-in4" firstAttribute="centerY" secondItem="eqO-6N-fj3" secondAttribute="centerY" id="Akr-ar-eYs"/>
-                            <constraint firstItem="CyI-Zg-in4" firstAttribute="leading" secondItem="eqO-6N-fj3" secondAttribute="leadingMargin" constant="9" id="bV1-uU-ocG"/>
-                            <constraint firstItem="CyI-Zg-in4" firstAttribute="top" secondItem="tXw-0s-fwi" secondAttribute="bottom" constant="144" id="dGj-ap-vuv"/>
-                            <constraint firstItem="CyI-Zg-in4" firstAttribute="centerX" secondItem="eqO-6N-fj3" secondAttribute="centerX" id="iAg-pM-Jek"/>
+                            <constraint firstAttribute="trailing" secondItem="RSN-Ho-zrY" secondAttribute="trailing" id="1pv-pn-hbM"/>
+                            <constraint firstItem="Xo4-5J-0nb" firstAttribute="top" secondItem="RSN-Ho-zrY" secondAttribute="bottom" id="6Xv-BM-abV"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="top" secondItem="tXw-0s-fwi" secondAttribute="bottom" constant="113" id="ToS-w2-MKN"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="centerY" secondItem="RSN-Ho-zrY" secondAttribute="centerY" id="VCn-Ze-2Oc"/>
+                            <constraint firstItem="RSN-Ho-zrY" firstAttribute="top" secondItem="eqO-6N-fj3" secondAttribute="top" id="VuG-Br-2ES"/>
+                            <constraint firstItem="RSN-Ho-zrY" firstAttribute="leading" secondItem="eqO-6N-fj3" secondAttribute="leading" id="ew9-0h-c2Z"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="leading" secondItem="eqO-6N-fj3" secondAttribute="leadingMargin" constant="16" id="odz-11-YeX"/>
+                            <constraint firstItem="CyI-Zg-in4" firstAttribute="centerX" secondItem="RSN-Ho-zrY" secondAttribute="centerX" id="vqx-c9-nUs"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bP8-3l-q43" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784" y="137"/>
+            <point key="canvasLocation" x="924" y="136.28185907046478"/>
         </scene>
     </scenes>
     <resources>
         <image name="MamasRight" width="750" height="1334"/>
+        <image name="MamasRightText" width="348" height="469"/>
     </resources>
 </document>
